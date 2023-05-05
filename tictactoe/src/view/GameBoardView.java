@@ -1,6 +1,7 @@
 package view;
 
 import controller.RowGameController;
+import controller.AbstractController;
 import model.BlockIndex;
 import model.RowGameModel;
 
@@ -21,7 +22,7 @@ public class GameBoardView implements View
     private JButton[][] blocks = new JButton[3][3];
 
     
-    public GameBoardView(JPanel game, RowGameController controller) {
+    public GameBoardView(JPanel game, AbstractController controller) {
 	super();
 
         // Initialize a JButton for each cell of the 3x3 game board.
@@ -78,7 +79,7 @@ public class GameBoardView implements View
     public void update(RowGameModel model) {
 	for (int row = 0; row < 3; row++) {
 	    for (int column = 0; column < 3; column++) {
-		updateBlock(model, row, column);
+		    updateBlock(model, row, column);
 	    } // end for col
 	} // end for row
     }

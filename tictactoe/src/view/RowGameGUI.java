@@ -12,6 +12,7 @@ import java.util.List;
 import model.BlockIndex;
 import model.RowGameModel;
 import controller.RowGameController;
+import controller.AbstractController;
 
 /**
  * The RowGameGUI class is applying the Composite design pattern.
@@ -25,11 +26,10 @@ public class RowGameGUI implements View {
     private List<View> viewList = new ArrayList<View>();
     public JButton reset = new JButton("Reset");
 
-
     /**
      * Creates a new game initializing the GUI.
      */
-    public RowGameGUI(RowGameController controller) {
+    public RowGameGUI(AbstractController controller) {
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gui.setSize(new Dimension(500, 350));
         gui.setResizable(true);
@@ -40,8 +40,8 @@ public class RowGameGUI implements View {
 
         JPanel options = new JPanel(new FlowLayout());
         options.add(reset);
-	UndoViewController undoViewController = new UndoViewController(options, controller);
-	addView(undoViewController);
+        UndoViewController undoViewController = new UndoViewController(options, controller);
+        addView(undoViewController);
         JPanel messages = new JPanel(new FlowLayout());
         messages.setBackground(Color.white);
 

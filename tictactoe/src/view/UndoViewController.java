@@ -1,6 +1,7 @@
 package view;
 
 import controller.RowGameController;
+import controller.AbstractController;
 import model.RowGameModel;
 
 import java.awt.event.ActionEvent;
@@ -14,7 +15,7 @@ public class UndoViewController implements View
     private JButton undo;
 
     
-    public UndoViewController(JPanel parent, RowGameController controller) {
+    public UndoViewController(JPanel parent, AbstractController controller) {
 	super();
 
 	this.undo = new JButton("Undo");
