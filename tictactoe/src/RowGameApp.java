@@ -1,6 +1,6 @@
+import controller.HumanRowGameController;
+import controller.ComputerRowGameController;
 import controller.RowGameController;
-import controller.AbstractController;
-import java.util.Scanner;
 
 public class RowGameApp 
 {
@@ -8,27 +8,24 @@ public class RowGameApp
      * Starts a new game in the GUI.
      */
     public static void main(String[] args) {
-        
-        AbstractController game = null;
+        // Give the user a text prompt instead of a command line argument
+        RowGameController game = null;
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        System.out.println("Would you like to play against a human or a computer?");
+        String input = scanner.nextLine();
 
-        Scanner opp = new Scanner(System.in); 
-        System.out.println("Would you like to play a human or computer?");
-
-        String pref = opp.nextLine(); 
-
-        while (!(pref.equals("human") || pref.equals("computer"))) {
-            System.out.println("Invalid input. Try again.");
-            opp = new Scanner(System.in); 
-            System.out.println("Would you like to play a human or computer?");
-            pref = opp.nextLine(); 
+        if (input.equals("human")) {
+            game = new HumanRowGameController();
+        }
+        else if (input.equals("computer")) {
+            game = new ComputerRowGameController();
+        }
+        else {
+            System.out.println("Usage: java RowGameApp <human|computer>");
+            System.exit(1);
         }
 
-        if (pref.equals("human")) {
-            game = new RowGameController();
-        } else if (pref.equals("computer")) {
-            game = new RowGameController();
-        } 
-        
         game.gameView.gui.setVisible(true);
+        scanner.close();
     }
 }

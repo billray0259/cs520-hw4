@@ -9,7 +9,7 @@
 * Generate javadoc and commit it **(take screenshot of javadoc)** [X]
 * Incremental commits about modifications
 
-## Extensibility 30%
+## Extensibility 30% [X]
 * Functionality to play against human or computer player
 * RowGameController applies either Strategy design pattern or template method design pattern
   * The helper method is the move method
@@ -21,18 +21,18 @@
 * User is player 1
 
 ## Testability 10%
-* Regression test ensuring existing 9 tests pass
+* Regression test ensuring existing 9 tests pass [X]
 * New test:
-  * Against a computer player: After performing a legal move, the game is updated appropriately.
-* Applies test case template from test driven development lecture
-* **(take screenshot of tests passing)**
+  * Against a computer player: After performing a legal move, the game is updated appropriately. [X]
+* Applies test case template from test driven development lecture [X]
+* **(take screenshot of tests passing)** [X]
 
 ## Debuggability 40%
-* Add breakpoint for undo **(take screenshot of breakpoint)**
-* Run in debug mode
+* Add breakpoint for undo **(take screenshot of breakpoint)** [X]
+* Run in debug mode [X]
 * Perform these actions in the game:
-  * Move **(take screenshot of variables view showing components are set appropriately after calling move)**
-  * Undo **(take screenshot of variables view showing components are empty again after calling undo)**
+  * Move **(take screenshot of variables view showing components are set appropriately after calling move)** [X]
+  * Undo **(take screenshot of variables view showing components are empty again after calling undo)** [X]
 
 ## Deliverables 10%
 * submit .zip to gradescope named hw4.zip containing
@@ -45,3 +45,5 @@
     * 5 screenshots
 * App compiles and runs
 * test suite compiles, runs, and all tests pass
+
+
