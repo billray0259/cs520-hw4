@@ -9,7 +9,7 @@
 * Generate javadoc and commit it **(take screenshot of javadoc)** [X]
 * Incremental commits about modifications
 
-## Extensibility 30%
+## Extensibility 30% [X]
 * Functionality to play against human or computer player
 * RowGameController applies either Strategy design pattern or template method design pattern
   * The helper method is the move method
@@ -21,7 +21,7 @@
 * User is player 1
 
 ## Testability 10%
-* Regression test ensuring existing 9 tests pass
+* Regression test ensuring existing 9 tests pass [X]
 * New test:
   * Against a computer player: After performing a legal move, the game is updated appropriately.
 * Applies test case template from test driven development lecture
