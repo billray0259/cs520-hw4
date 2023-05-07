@@ -22,3 +22,5 @@
 Supported features:
 
 * Undo functionality - If the game has not just started or finished, the users are allowed to undo their previous moves. The user should click on the Undo button to undo the immediately previous move.
+
+* One player mode - The user can play against the computer. The user should click on the "Play against computer" button to play against the computer. The user should click on the "Play against human" button to play against another human.
