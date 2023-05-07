@@ -11,6 +11,7 @@ import java.util.List;
 import model.BlockIndex;
 import model.RowGameModel;
 import controller.AbstractController;
+import controller.RowGameController;
 
 /**
  * The RowGameGUI class is applying the Composite design pattern.
@@ -58,6 +59,9 @@ public class RowGameGUI implements View {
 
 	this.gameBoardView = new GameBoardView(game, controller);
 	addView(this.gameBoardView);
+    }
+
+    public RowGameGUI(RowGameController rowGameController) {
     }
 
     public BlockIndex getBlockIndex(JButton block) {
