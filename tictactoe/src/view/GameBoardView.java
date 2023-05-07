@@ -1,6 +1,5 @@
 package view;
 
-import controller.RowGameController;
 import controller.AbstractController;
 import model.BlockIndex;
 import model.RowGameModel;

@@ -2,7 +2,6 @@ package view;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JTextArea;
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.event.*;
@@ -11,7 +10,6 @@ import java.util.List;
 
 import model.BlockIndex;
 import model.RowGameModel;
-import controller.RowGameController;
 import controller.AbstractController;
 
 /**
