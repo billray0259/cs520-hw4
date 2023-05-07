@@ -126,7 +126,10 @@ public abstract class RowGameController {
      * Performs undo for the last move taken if the game is not
      * in its initial configuration or has been finished.
      */
-    public void undo() {
+    public abstract void undo();
+    
+    
+    public void undoHelper() {
         if (gameModel.movesLeft == 9 || gameModel.getFinalResult() != null) {
             throw new UnsupportedOperationException("Undo is currently disallowed.");
         }

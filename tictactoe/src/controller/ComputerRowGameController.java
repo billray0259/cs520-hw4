@@ -27,4 +27,10 @@ public class ComputerRowGameController extends RowGameController {
         return null;
     }
 
+    @Override
+    public void undo() {
+        undoHelper();
+        undoHelper();
+    }
+
 }

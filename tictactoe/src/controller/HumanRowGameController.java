@@ -9,4 +9,9 @@ public class HumanRowGameController extends RowGameController {
         moveHelper(blockIndex);
     }
 
+    @Override
+    public void undo() {
+        undoHelper();
+    }
+
 }
